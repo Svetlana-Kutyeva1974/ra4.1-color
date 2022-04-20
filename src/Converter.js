@@ -27,7 +27,7 @@ const handleNameChange = evt => {
 
 
 return (
-  <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit} >
     <div className='input'>  
       <label htmlFor="hex">hex color</label>
       <input id="hex" name="hex" value={form.hex} onChange={handleNameChange}/>

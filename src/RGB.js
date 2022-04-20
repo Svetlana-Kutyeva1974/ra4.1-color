@@ -11,7 +11,7 @@ function RGB(props) {
      const hex= value.slice(1);
      console.log('hex---', hex);
      for (let i=0; i<=4; i= i+2) {
-      num = parseInt(hex.slice(i,i+1), 16);
+      num = parseInt(hex.slice(i,i+2), 16);
       console.log('num---', num);
       rgb +=num+','; 
       console.log('rgb---', rgb);
