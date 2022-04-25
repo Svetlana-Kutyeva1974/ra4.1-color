@@ -1,7 +1,5 @@
-//import React from 'react';
 import React, { useState } from 'react';
 import RGB from './RGB';
-// import PropTypes from 'prop-types';//alert( parseInt('0xff', 16) ); // 255
 
 export default function Converter() {
 
