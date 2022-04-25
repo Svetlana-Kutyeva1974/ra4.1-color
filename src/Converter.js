@@ -25,11 +25,12 @@ const handleNameChange = evt => {
   }
 };
 
+// (form.hex) ? document.body.style.backgroundColor = `${form.hex}` : document.body.style.backgroundColor = 'rgb(255,255,255)';
 
 return (
   <form onSubmit={handleSubmit} >
     <div className='input'>  
-      <label htmlFor="hex">hex color</label>
+      <label htmlFor="hex">HEX </label>
       <input id="hex" name="hex" value={form.hex} onChange={handleNameChange}/>
     </div>
     <RGB value={form.hex} />
