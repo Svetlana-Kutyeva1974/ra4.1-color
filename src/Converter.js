@@ -5,7 +5,6 @@ export default function Converter() {
 
 const [form, setForm] = useState({
 hex: '',
-endOfInput: false
 });
 
 const handleSubmit = evt => {
@@ -16,14 +15,8 @@ const handleSubmit = evt => {
 
 const handleNameChange = evt => {
   console.log('evt.target.value.length', evt.target.value.length);
-  if (evt.target.value.length<7 ) {
-    setForm(prevForm => ({hex: evt.target.value, endOfInput: false}));
-  } else {
-    setForm(prevForm => ({hex: evt.target.value, endOfInput: true}));
-  }
+  setForm(() => ({hex: evt.target.value}));
 };
-
-// (form.hex) ? document.body.style.backgroundColor = `${form.hex}` : document.body.style.backgroundColor = 'rgb(255,255,255)';
 
 return (
   <form onSubmit={handleSubmit} >
@@ -35,3 +28,13 @@ return (
   </form>
 );
 }
+
+
+
+
+
+
+
+
+
+// (form.hex) ? document.body.style.backgroundColor = `${form.hex}` : document.body.style.backgroundColor = 'rgb(255,255,255)';

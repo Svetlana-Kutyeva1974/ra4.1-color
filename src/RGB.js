@@ -10,7 +10,6 @@ function RGB(props) {
   
    if (value.length === 7 && regex.test(value)){
      const hex= value.slice(1);
-     
      for (let i=0; i<=4; i= i+2) {
       num = parseInt(hex.slice(i,i+2), 16);
       rgb +=num+','; 
@@ -24,7 +23,6 @@ function RGB(props) {
      document.body.style.backgroundColor = 'rgb(255,0,0)';
    } else if(value.length < 7 || value.length === 0){
     rgb = 'rgb(255,255,255)';
-    console.log('rgb- free--', rgb);
     message = "";
     document.body.style.backgroundColor = 'rgb(255,255,255)';
    }
