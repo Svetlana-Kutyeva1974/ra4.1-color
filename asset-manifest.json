@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ra4.1-color/static/css/main.48ee64d6.css",
+    "main.js": "/ra4.1-color/static/js/main.1fe4fdc8.js",
+    "index.html": "/ra4.1-color/index.html",
+    "main.48ee64d6.css.map": "/ra4.1-color/static/css/main.48ee64d6.css.map",
+    "main.1fe4fdc8.js.map": "/ra4.1-color/static/js/main.1fe4fdc8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48ee64d6.css",
+    "static/js/main.1fe4fdc8.js"
+  ]
+}
